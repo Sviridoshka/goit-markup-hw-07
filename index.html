@@ -15,62 +15,63 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container header-container">
-        <div class="logo-container">
-          <a class="header-logo link" href="./index.html"
-            >Web<span class="header-accent">Studio</span></a
-          >
-        </div>
+      <div class="container header__container">
+        <a class="logo logo__assistant link" href="./index.html"
+          >Web<span class="logo__accent">Studio</span></a
+        >
 
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
               <a class="current link" href="./index.html">Студія</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="./portfolio.html">Портфоліо</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="#">Контакти</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-mail link" href="mailto:info@devstudio.com"
-              ><svg class="mail-icon" width="16px" height="12px">
-                <use href="./img/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
+        <div class="connect connect__assistent">
+          <ul class="contact__list list">
+            <li class="connect__item">
+              <a class="mail link" href="mailto:info@devstudio.com"
+                ><svg class="mail__icon" width="16px" height="12px">
+                  <use href="./img/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
 
-          <li class="header-item">
-            <a class="header-tel link" href="tel:+380961111111">
-              <svg class="tel-icon" width="10px" height="16px">
-                <use href="./img/icons.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <li class="connect__item">
+              <a class="tel link" href="tel:+380961111111">
+                <svg class="tel__icon" width="10px" height="16px">
+                  <use href="./img/icons.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">
+        <div class="container hero__container">
+          <h1 class="hero__title">
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -79,31 +80,31 @@
           <!--це тимчасовий заголовок-->
           <h2 class="visually-hidden">Skills</h2>
 
-          <ul class="skills-list list">
-            <li class="skills-item icon-antenna">
+          <ul class="skills__list list">
+            <li class="skills__item icon-antenna">
               <h3 class="title">Увага до деталей</h3>
-              <p class="skills-text">
+              <p class="skills__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
 
-            <li class="skills-item icon-clock">
+            <li class="skills__item icon-clock">
               <h3 class="title">Пунктуальність</h3>
-              <p class="skills-text">
+              <p class="skills__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
 
-            <li class="skills-item icon-vector">
+            <li class="skills__item icon-vector">
               <h3 class="title">Планування</h3>
-              <p class="skills-text">
+              <p class="skills__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="skills-item icon-astronaut">
+            <li class="skills__item icon-astronaut">
               <h3 class="title">Сучасні технології</h3>
-              <p class="skills-text">
+              <p class="skills__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -113,11 +114,11 @@
 
       <section class="hard-skills">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="hard-skills-list list">
-            <li class="hard-skills-item hard-skills-thumb">
+          <h2 class="title">Чим ми займаємося</h2>
+          <ul class="hard-skills__list list">
+            <li class="hard-skills__item hard-skills__thumb">
               <img
-                class="hard-skills-img"
+                class="hard-skills__img"
                 src="./img/img2.jpg"
                 alt="дизайн"
                 width="370"
@@ -126,9 +127,9 @@
               <p class="label">десктопні додатки</p>
             </li>
 
-            <li class="hard-skills-item hard-skills-thumb">
+            <li class="hard-skills__item hard-skills__thumb">
               <img
-                class="hard-skills-img"
+                class="hard-skills__img"
                 src="./img/img1.jpg"
                 alt="програмування"
                 width="370"
@@ -136,9 +137,9 @@
               />
               <p class="label">мобільні додатки</p>
             </li>
-            <li class="hard-skills-item hard-skills-thumb">
+            <li class="hard-skills__item hard-skills__thumb">
               <img
-                class="hard-skills-img"
+                class="hard-skills__img"
                 src="./img/img3.jpg"
                 alt="колір"
                 width="370"
